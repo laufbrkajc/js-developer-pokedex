@@ -5,12 +5,11 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: FTP Deploy Locaweb
       uses: locaweb/ftp-deploy@1.0.0
       with:
-        host: ${{ secrets.HOST }} 
-        user: ${{ secrets.USER }}
-        password: ${{ secrets.LOCAWEB_FTP_DEPLOY_SECRET }}
-        localDir: "dist"
+        host: ${{ secrets.FTP_DEPLOY_HOST }} 
+        user: ${{ secrets.FTP_DEPLOY_USER }}
+        password: ${{ secrets.FTP_DEPLOY_SENHA }}
