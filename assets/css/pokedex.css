@@ -2,6 +2,29 @@ h1 {
     color: whitesmoke;
 }
 
+#modalDetails {
+    width: 80vw;
+    height: 50vh;
+    position: fixed;
+    top: 25vh;
+    left: 10vw;
+    margin: auto;
+    z-index: 100;
+    box-sizing: border-box;
+    background: gray;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#closeModal {
+    float: right;
+    filter: grayscale(50%);
+}
+
+#closeModal:hover {
+    filter: none;
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
